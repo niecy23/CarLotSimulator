@@ -37,6 +37,8 @@ namespace CarLotSimulator
 
             lot.Cars.Add(newCar1);
 
+            Console.WriteLine($"Numbers of cars created: {CarLot.numberOfCars}");
+
             //Way #2 - Adding a new car and adding it to the list of cars called "lot.Cars".
             var newCar2 = new Car()
             {
@@ -50,10 +52,14 @@ namespace CarLotSimulator
 
             lot.Cars.Add(newCar2);
 
+            Console.WriteLine($"Numbers of cars created: {CarLot.numberOfCars}");
+
             //Way #3 - Adding a new car and adding it to the list of cars called "lot.Cars".
             var newCar3 = new Car(2015, "Chevrolet", "Tahoe", "Click", "Wonk", true);
 
             lot.Cars.Add(newCar3);
+
+            Console.WriteLine($"Numbers of cars created: {CarLot.numberOfCars}");
 
 
             //Calling the MakeEngineNoise method for each car. 
@@ -65,7 +71,6 @@ namespace CarLotSimulator
             newCar1.MakeHonkNoise(newCar1.HonkNoise);
             newCar2.MakeHonkNoise(newCar2.HonkNoise);
             newCar3.MakeHonkNoise(newCar3.HonkNoise);
-
 
             //Printing the list of cars with the Year, Make, and Model to the console. 
             foreach (var car in lot.Cars)

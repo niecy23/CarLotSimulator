@@ -4,9 +4,11 @@ namespace CarLotSimulator
 	public class Car
 	{
 
-        //Creating the Car class and adding it's properties. 
+        //Creating the Car class and adding it's properties/methods. 
         public Car()
 		{
+            //Incementing the number of cars after a new car is added.
+            CarLot.numberOfCars++;
 		}
         
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
@@ -17,6 +19,9 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+
+            //Incementing the number of cars after a new car is added.
+            CarLot.numberOfCars++;
 
         }
 
